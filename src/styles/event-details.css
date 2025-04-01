@@ -1,0 +1,23 @@
+.border-with-padding {
+  border: 1px solid #d175b6;
+  border-radius: 3px;
+  padding: 4px 10px;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.border-with-padding span {
+  font-weight: 500;
+}
+
+.event-details-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.event-time {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+}

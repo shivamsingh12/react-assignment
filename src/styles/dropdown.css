@@ -1,0 +1,22 @@
+.dropdown {
+  width: 100%;
+  background-color: transparent;
+  font-weight: 300;
+  color: rgb(201, 195, 195);
+  border: none;
+}
+
+.dropdown-assign-coordinator select {
+  font-size: 16px;
+  height: 44px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.dropdown-container-coordinator {
+  padding-right: 16px;
+  padding-left: 16px;
+  width: 100%;
+}

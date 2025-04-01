@@ -1,0 +1,43 @@
+.meeting-info-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 10px;
+  border: 1px solid #d175b6;
+  border-radius: 12px;
+  box-shadow: 0px 0px 30px #d175b633;
+}
+
+.meeting-info-details {
+  display: flex;
+  gap: 10px;
+}
+
+.meeting-info-details div {
+  align-self: center;
+}
+
+.contractor-container {
+  border: 1px solid #d175b6;
+  border-radius: 12px;
+  height: 429px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  box-shadow: 0px 0px 30px #d175b633;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.contractor-content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contractor-header {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}

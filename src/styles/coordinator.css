@@ -1,0 +1,15 @@
+.coordinator-title {
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.coordinator-footer {
+  font-weight: 400;
+  font-size: 16px;
+  color: #d175b6;
+  padding-top: 6px;
+}
+.dropdown-assign-coordinator {
+  border: 1px solid white;
+  border-radius: 8px;
+}

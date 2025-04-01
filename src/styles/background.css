@@ -1,0 +1,82 @@
+.eclipse {
+  height: 750px;
+  width: 750px;
+  position: fixed;
+  z-index: -1;
+  filter: blur(350px);
+  -webkit-filter: blur(350px);
+}
+
+.revolve-1 {
+  background-image: linear-gradient(#ff00ff, #00eec5);
+  animation-name: orbit-1;
+  animation-timing-function: linear;
+  animation-duration: 21s;
+  animation-delay: 1ms;
+  animation-iteration-count: infinite;
+}
+
+.revolve-2 {
+  background-image: linear-gradient(#8f00ff, #00c8ff);
+  animation-name: orbit-2;
+  animation-timing-function: linear;
+  animation-duration: 21s;
+  animation-delay: 1ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes orbit-1 {
+  0%,
+  100% {
+    top: 0px;
+    left: 666px;
+  }
+  17% {
+    top: 477px;
+    left: -51px;
+  }
+  33% {
+    top: 308px;
+    left: -161px;
+  }
+  50% {
+    top: 743px;
+    left: 600px;
+  }
+  67% {
+    top: 308px;
+    left: -161px;
+  }
+  84% {
+    top: 477px;
+    left: -51px;
+  }
+}
+
+@keyframes orbit-2 {
+  0%,
+  100% {
+    left: 0px;
+    top: 718px;
+  }
+  17% {
+    top: 228px;
+    left: 634px;
+  }
+  33% {
+    top: -201px;
+    left: 865px;
+  }
+  50% {
+    top: 92px;
+    left: -168px;
+  }
+  67% {
+    top: -201px;
+    left: 865px;
+  }
+  84% {
+    top: 228px;
+    left: 634px;
+  }
+}
