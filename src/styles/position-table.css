@@ -1,6 +1,5 @@
 .position-table {
   overflow-x: auto;
-  background-color: rgba(0, 0, 0, 1);
 }
 
 .bordered {
@@ -8,11 +7,18 @@
   border-radius: 12px;
   /* overflow-x: auto; */
   width: 900px;
-  box-shadow: 0px 0px 30px rgba(204, 204, 204, 0.5),
-    0px 0px 30px rgba(209, 117, 182, 0.2);
+  filter: drop-shadow(0px 0px 30px rgba(209, 117, 182, 0.2))
+    drop-shadow(0px 1px 0px rgba(26, 26, 26, 0.07));
+  box-shadow: 0px 1px 0px 0px rgba(204, 204, 204, 0.5) inset,
+    0px -1px 0px 0px rgba(0, 0, 0, 0.17) inset,
+    -1px 0px 0px 0px rgba(0, 0, 0, 0.13) inset,
+    1px 0px 0px 0px rgba(0, 0, 0, 0.13) inset;
+  background-color: black;
 }
 .position-table table {
   width: 100%;
+
+  /* background-color: rgba(0, 0, 0, 1); */
 }
 
 .position-table table,
