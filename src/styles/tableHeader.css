@@ -56,3 +56,28 @@
 .margin-10 {
   margin-left: 12px;
 }
+
+@media only screen and (min-width: 500px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 4px;
+  }
+
+  .search-container {
+    height: 38px;
+  }
+
+  .add-action {
+    height: 30px;
+    width: 30px;
+  }
+
+  .heading {
+    font-weight: 400;
+    font-size: 22px;
+  }
+}

@@ -11,7 +11,6 @@
 }
 
 .event-details-page-container {
-  margin: 20px 10px;
   border: 2px solid #d175b6;
   border-radius: 16px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -20,12 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.event-name {
-}
-
-.event-nav {
+  margin-right: 20px;
 }
 
 .assign-coordinator-and-event-details {
@@ -50,4 +44,26 @@
   font-weight: 400;
   font-size: 20px;
   color: white;
+}
+
+@media only screen and (min-width: 500px) {
+  .event-details-page-container {
+    margin-right: 0px;
+  }
+  .assign-coordinator-and-event-details {
+    flex-direction: row;
+    width: 100%;
+  }
+  .assign-coordinator-and-event-details div {
+    width: 100%;
+  }
+
+  .assign-contractor-and-position-table {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .positions-table {
+    width: 65%;
+  }
 }

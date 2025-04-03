@@ -10,16 +10,10 @@ import AssignCoordinator from "../components/AssignCoordinator";
 export default function EventDetailsPage() {
   return (
     <div className="event-details-page-container">
-      <div>
-        <EventHeader />
-      </div>
-      <div>
-        <EventDetailsNav />
-      </div>
+      <EventHeader />
+      <EventDetailsNav />
       <div className="assign-coordinator-and-event-details">
-        <div>
-          <AssignCoordinator />
-        </div>
+        <AssignCoordinator />
         <EventDetails />
       </div>
       <div className="assign-contractor-and-position-table">

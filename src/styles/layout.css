@@ -1,0 +1,39 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.appbar-layout {
+  /* overflow-x: hidden; */
+}
+
+.sidebar {
+  width: 25%;
+  display: none;
+}
+
+.sidebar-and-outlet {
+  display: flex;
+  padding: 20px;
+  padding-right: 0px;
+}
+
+.outlet {
+  overflow-x: hidden;
+}
+
+@media only screen and (min-width: 500px) {
+  .sidebar-and-outlet {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    gap: 16px;
+  }
+
+  .sidebar {
+    display: flex;
+    height: 81vh;
+  }
+}

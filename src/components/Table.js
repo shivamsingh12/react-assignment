@@ -2,10 +2,13 @@ import tableData from "../data/tableData";
 import { ReactComponent as ArrowUp } from "../assets/arrow-up.svg";
 import { ReactComponent as ArrowDown } from "../assets/arrow-down.svg";
 import { ReactComponent as View } from "../assets/view.svg";
-
+import { useNavigate } from "react-router-dom";
 import "../styles/table.css";
+import "../styles/utilities.css";
 
 export default function Table() {
+  const navigate = useNavigate();
+
   return (
     <div className="scroll-table">
       <table className="event-table">
@@ -16,7 +19,7 @@ export default function Table() {
               <div className="backdrop-blur border-bottom"></div>
               <div className="icon-heading table-heading-event-name">
                 <div className="align-center">Event Name</div>
-                <div className="align-center">
+                <div className="align-center icon-wide">
                   <ArrowDown />
                 </div>
               </div>
@@ -25,7 +28,7 @@ export default function Table() {
             <td className="table-heading-event-end">
               <div className="icon-heading">
                 <div className="align-center">Event End</div>
-                <div className="align-center">
+                <div className="align-center  icon-wide">
                   <ArrowUp />
                 </div>
               </div>
@@ -33,7 +36,7 @@ export default function Table() {
             <td className="table-heading-client-name">
               <div className="icon-heading">
                 <div className="align-center">Client Name</div>
-                <div className="align-center">
+                <div className="align-center  icon-wide">
                   <ArrowDown />
                 </div>
               </div>
@@ -54,7 +57,14 @@ export default function Table() {
                   <div className="backdrop-blur"></div>
 
                   <div className="view-event-cell table-data-event-name">
-                    <div className="align-center">
+                    <div
+                      role="button"
+                      onClick={() => {
+                        navigate("/details");
+                      }}
+                      className="align-center highlight-on-hover"
+                      style={{ borderRadius: "8px" }}
+                    >
                       <View />
                     </div>
                     <div className="align-center">{row.eventName}</div>

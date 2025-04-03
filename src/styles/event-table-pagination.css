@@ -1,0 +1,32 @@
+.event-table-pagination {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background-color: black;
+  border-bottom-left-radius: 16px;
+}
+
+.arrow-paginate {
+  height: 24px;
+  width: 16px;
+  font-size: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.highlight-on-hover-paginate:hover {
+  color: pink;
+}
+
+@media only screen and (min-width: 500px) {
+  .event-table-pagination {
+    border-bottom-right-radius: 16px;
+    height: 36px;
+  }
+}

@@ -1,10 +1,14 @@
 .appbar-content {
-  width: 100vw; /* this is causing scroll */
+  width: 98vw; /* this is causing scroll */
   height: 100px;
   padding: 60px 20px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.burger {
+  display: none;
 }
 
 .appbar-content-group {
@@ -64,4 +68,15 @@
 
 .welcome-text p {
   font-weight: 300;
+}
+
+@media only screen and (min-width: 500px) {
+  .appbar-content {
+    padding: 20px 40px;
+    height: 15vh;
+  }
+
+  .burger {
+    display: block;
+  }
 }

@@ -41,3 +41,27 @@
   font-size: 24px;
   color: white;
 }
+
+.contractor-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.contractor-container::-webkit-scrollbar {
+  display: none;
+}
+
+.meeting-info-card:active {
+  background-color: #d175b6 !important;
+}
+
+.meeting-info-card:active .meeting-info-position {
+  color: black !important;
+}
+
+.contractor-container .meeting-info-card:first-child {
+  background-color: #d175b6 !important;
+}
+
+.contractor-container .meeting-info-card:first-child .meeting-info-position {
+  color: black;
+}

@@ -6,22 +6,8 @@
 
 .scroll-table {
   overflow-x: auto;
+  width: 100%;
 }
-
-/* .scroll-table::-webkit-scrollbar {
-  padding-top: 10px;
-  height: 6px;
-}
-
-.scroll-table::-webkit-scrollbar-track {
-  background-color: rgb(168, 167, 167);
-  border-radius: 10px;
-}
-
-.scroll-table::-webkit-scrollbar-thumb {
-  background-color: white;
-  border-radius: 10px;
-} */
 
 .scroll-table .event-table tbody td,
 th {
@@ -66,7 +52,7 @@ td {
   width: 250px;
   height: 50px;
   margin-left: 90px;
-  position: fixed;
+  position: absolute;
 }
 
 .position-fixed-heading {
@@ -77,7 +63,7 @@ td {
 .backdrop-blur {
   width: 200px;
   height: 48px;
-  position: fixed;
+  position: absolute;
   backdrop-filter: blur(80px);
 }
 
@@ -94,7 +80,7 @@ td {
   display: flex;
   width: 200px;
   height: 52px;
-  position: fixed;
+  position: absolute;
   border-bottom: 2px solid #d175b6;
   z-index: 1000;
 }
@@ -155,4 +141,43 @@ td {
 }
 .table-data-zipcode {
   padding-left: 72px;
+}
+
+@media only screen and (min-width: 500px) {
+  .event-table thead th,
+  .event-table thead td {
+    font-size: 16px;
+  }
+
+  .event-table tbody th,
+  .event-table tbody td {
+    font-size: 14px;
+  }
+
+  .icon-wide {
+    height: 18px;
+    width: 18px;
+    align-self: center;
+  }
+
+  /* lhgj */
+  .event-table th,
+  .event-table td,
+  .table-heading-event-name,
+  .position-fixed-heading,
+  .position-fixed-data {
+    height: 37px;
+  }
+
+  .backdrop-blur {
+    height: 38px;
+  }
+
+  .table-data-event-name {
+    height: 38px;
+  }
+
+  .event-table table {
+    height: 100%;
+  }
 }

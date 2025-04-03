@@ -21,3 +21,20 @@
   display: flex;
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+.event-details-header-hide {
+  display: none;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.event-details-header-hide span {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 500px) {
+  .event-details-header-hide {
+    display: block;
+  }
+}
