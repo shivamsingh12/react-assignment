@@ -1,6 +1,6 @@
 .eclipse {
-  height: 750px;
-  width: 750px;
+  height: 450px;
+  width: 450px;
   position: fixed;
   z-index: -1;
   filter: blur(350px);
